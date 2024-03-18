@@ -23,3 +23,18 @@ def is_even_number():
         print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct}'.")
         return False
 
+
+def is_even():
+    name = welcome_user()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+    count = 0
+    while count < 3:
+        if is_even_number():
+            count += 1
+            continue
+        else:
+            break
+    if count == 3:
+        print(f'Congratulations, {name}!')
+    else:
+        print(f"Let's try again, {name}!")
