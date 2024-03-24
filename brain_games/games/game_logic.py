@@ -23,6 +23,8 @@ def question(function):
         print('What is the result of the expression?')
     if 'gcd' in str(function):
         print('Find the greatest common divisor of given numbers.')
+    if 'progression' in str(function):
+        print('What number is missing in the progression?')
 
 
 def check_result(answer, result):
