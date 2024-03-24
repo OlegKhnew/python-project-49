@@ -3,5 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/276612709ae4c98e13f4/maintainability)](https://codeclimate.com/github/OlegKhnew/python-project-49/maintainability)
 
-# for start the game please : 
+# please try demo of even-game: 
 https://asciinema.org/a/Zeq4FbCAH2s3H6YUqS6D4U164
+
+# please try demo of calc-game:
+https://asciinema.org/a/dkLbpLzyn0y1suaU19nEkVCF4
