@@ -21,6 +21,8 @@ def question(function):
         print('Answer "yes" if the number is even, otherwise answer "no".')
     if 'calc' in str(function):
         print('What is the result of the expression?')
+    if 'gcd' in str(function):
+        print('Find the greatest common divisor of given numbers.')
 
 
 def check_result(answer, result):
