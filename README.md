@@ -11,3 +11,6 @@ https://asciinema.org/a/dkLbpLzyn0y1suaU19nEkVCF4
 
 # please try demo of gcd-game:
 https://asciinema.org/a/DE8Awo6Dp01fnRYZqx964OU4s
+
+# please try demo of progression-game:
+https://asciinema.org/a/v09sCDm4XPkkNoT4M8FrOCAsi
