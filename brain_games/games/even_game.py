@@ -5,7 +5,7 @@ import prompt
 
 
 def even_game():
-    number = random.randint(1,100)
+    number = random.randint(1, 100)
     print('Question: ' + str(number))
     answer = prompt.string('Your answer: ')
     if number % 2 == 0:
@@ -13,4 +13,3 @@ def even_game():
     else:
         result = 'no'
     return answer, result
-

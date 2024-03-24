@@ -6,15 +6,15 @@ import operator
 
 
 def calc_game():
-    x = random.randint(1,50)
-    y = random.randint(1,50)
+    x = random.randint(1, 50)
+    y = random.randint(1, 50)
     op = random.choice(['+', '-', '*'])
     print('Question: ' + str(x) + ' ' + op + ' ' + str(y))
     answer = prompt.integer('Your answer: ')
     if op == '+':
-        result = operator.add(x,y)
+        result = operator.add(x, y)
     elif op == '-':
-        result = operator.sub(x,y)
+        result = operator.sub(x, y)
     elif op == '*':
-        result = operator.mul(x,y)
+        result = operator.mul(x, y)
     return answer, result

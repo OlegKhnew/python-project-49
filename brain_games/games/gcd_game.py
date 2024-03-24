@@ -5,8 +5,8 @@ import prompt
 
 
 def gcd_game():
-    x = random.randint(1,100)
-    y = random.randint(1,100)
+    x = random.randint(1, 100)
+    y = random.randint(1, 100)
     print('Question: ' + str(x) + ' ' + str(y))
     answer = prompt.integer('Your answer: ')
     while x != y:
