@@ -14,3 +14,6 @@ https://asciinema.org/a/DE8Awo6Dp01fnRYZqx964OU4s
 
 # please try demo of progression-game:
 https://asciinema.org/a/v09sCDm4XPkkNoT4M8FrOCAsi
+
+# please try demo of prime-game
+https://asciinema.org/a/Bo2HVfRz6LhBfDUsJ7a70uNo0
