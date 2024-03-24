@@ -25,6 +25,8 @@ def question(function):
         print('Find the greatest common divisor of given numbers.')
     if 'progression' in str(function):
         print('What number is missing in the progression?')
+    if 'prime' in str(function):
+        print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def check_result(answer, result):
