@@ -1,12 +1,21 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "5-games set of logic math games"
 authors = ["Oleg Kharitonov <o_kharitonov@mail.ru>"]
 readme = "README.md"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python"
+]
 packages = [
 	{ include = "brain_games" }, 
 ]
+
+
+[project.urls]
+Repository = "https://github.com/OlegKhnew/python-project-49"
+
 
 [tool.poetry.dependencies]
 python = "^3.10"

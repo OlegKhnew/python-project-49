@@ -7,13 +7,13 @@
 [![asciicast](https://asciinema.org/a/Zeq4FbCAH2s3H6YUqS6D4U164.svg)](https://asciinema.org/a/Zeq4FbCAH2s3H6YUqS6D4U164)
 
 # please try demo of calc-game:
-https://asciinema.org/a/dkLbpLzyn0y1suaU19nEkVCF4
+[![asciicast](https://asciinema.org/a/dkLbpLzyn0y1suaU19nEkVCF4.svg)](https://asciinema.org/a/dkLbpLzyn0y1suaU19nEkVCF4)
 
 # please try demo of gcd-game:
-https://asciinema.org/a/DE8Awo6Dp01fnRYZqx964OU4s
+[![asciicast](https://asciinema.org/a/DE8Awo6Dp01fnRYZqx964OU4s.svg)](https://asciinema.org/a/DE8Awo6Dp01fnRYZqx964OU4s)
 
 # please try demo of progression-game:
-https://asciinema.org/a/v09sCDm4XPkkNoT4M8FrOCAsi
+[![asciicast](https://asciinema.org/a/v09sCDm4XPkkNoT4M8FrOCAsi.svg)](https://asciinema.org/a/v09sCDm4XPkkNoT4M8FrOCAsi)
 
 # please try demo of prime-game
-https://asciinema.org/a/Bo2HVfRz6LhBfDUsJ7a70uNo0
+[![asciicast](https://asciinema.org/a/Bo2HVfRz6LhBfDUsJ7a70uNo0.svg)](https://asciinema.org/a/Bo2HVfRz6LhBfDUsJ7a70uNo0)
