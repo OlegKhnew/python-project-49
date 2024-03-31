@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 import random
-import prompt
+
+
+progression_rule = 'What number is missing in the progression?'
 
 
 def progression_game():
@@ -12,6 +14,5 @@ def progression_game():
     result = int(progression_line[x_index])
     progression_line[x_index] = '..'
     question_line = ' '.join(progression_line)
-    print(f'Question: {question_line}')
-    answer = prompt.integer('Your answer: ')
-    return answer, result
+    question = f'Question: {question_line}'
+    return question, result

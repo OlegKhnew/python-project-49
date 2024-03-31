@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 
 import random
-import prompt
+
+
+even_rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def even_game():
     number = random.randint(1, 100)
-    print('Question: ' + str(number))
-    answer = prompt.string('Your answer: ')
+    question = 'Question: ' + str(number)
     if number % 2 == 0:
         result = 'yes'
     else:
         result = 'no'
-    return answer, result
+    return question, result

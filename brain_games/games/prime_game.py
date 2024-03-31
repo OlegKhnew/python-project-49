@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 import random
-import prompt
+
+
+prime_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(x):
@@ -17,6 +19,5 @@ def prime_game():
         result = 'yes'
     else:
         result = 'no'
-    print(f'Question: {n}')
-    answer = prompt.string('Your answer: ')
-    return answer, result
+    question = f'Question: {n}'
+    return question, result

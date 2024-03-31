@@ -16,21 +16,8 @@ def goodbye_user(count, name):
         print(f"Let's try again, {name}!")
 
 
-def question(function):
-    if 'even' in str(function):
-        print('Answer "yes" if the number is even, otherwise answer "no".')
-    if 'calc' in str(function):
-        print('What is the result of the expression?')
-    if 'gcd' in str(function):
-        print('Find the greatest common divisor of given numbers.')
-    if 'progression' in str(function):
-        print('What number is missing in the progression?')
-    if 'prime' in str(function):
-        print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-
 def check_result(answer, result):
-    if answer == result:
+    if answer == str(result):
         print('Correct!')
         return True
     else:
@@ -38,12 +25,14 @@ def check_result(answer, result):
         return False
 
 
-def game_logic(function):
+def game_logic(rule, function):
     name = welcome_user()
-    question(function)
+    print(rule)
     count = 0
     while count < 3:
-        answer, result = function()
+        question, result = function()
+        print(question)
+        answer = prompt.string('Your answer: ')
         if check_result(answer, result):
             count += 1
             continue
