@@ -3,14 +3,18 @@
 import random
 
 
-even_rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def is_evem(x):
+    if x % 2 == 0:
+        return 'yes'
+    else:
+        return 'no'
 
 
 def even_game():
     number = random.randint(1, 100)
-    question = 'Question: ' + str(number)
-    if number % 2 == 0:
-        result = 'yes'
-    else:
-        result = 'no'
+    question = str(number)
+    result = is_evem(number)
     return question, result

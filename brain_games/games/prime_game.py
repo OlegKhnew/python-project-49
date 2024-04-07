@@ -3,7 +3,7 @@
 import random
 
 
-prime_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(x):
@@ -14,10 +14,10 @@ def is_prime(x):
 
 
 def prime_game():
-    n = random.randint(1, 200)
-    if is_prime(n):
+    number = random.randint(1, 200)
+    if is_prime(number):
         result = 'yes'
     else:
         result = 'no'
-    question = f'Question: {n}'
+    question = number
     return question, result

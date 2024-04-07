@@ -4,7 +4,7 @@ import random
 import operator
 
 
-calc_rule = 'What is the result of the expression?'
+rule = 'What is the result of the expression?'
 
 
 def calc_game():

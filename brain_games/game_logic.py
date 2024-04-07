@@ -3,42 +3,29 @@
 import prompt
 
 
-def welcome_user():
+def game_logic(rule, function):
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
-    return name
-
-
-def goodbye_user(count, name):
-    if count == 3:
-        print(f'Congratulations, {name}!')
-    else:
-        print(f"Let's try again, {name}!")
-
-
-def check_result(answer, result):
-    if answer == str(result):
-        print('Correct!')
-        return True
-    else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
-        return False
-
-
-def game_logic(rule, function):
-    name = welcome_user()
     print(rule)
     count = 0
     while count < 3:
         question, result = function()
-        print(question)
+        print('Question: ' + str(question))
         answer = prompt.string('Your answer: ')
-        if check_result(answer, result):
+        if answer == str(result):
+            print('Correct!')
             count += 1
             continue
         else:
+            answer = f"'{answer}' is wrong answer ;(. "\
+                     f"Correct answer was '{result}'."
+            print(answer)
+# print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
             break
-    goodbye_user(count, name)
+    if count == 3:
+        print(f'Congratulations, {name}!')
+    else:
+        print(f"Let's try again, {name}!")
 
 
 def main():
