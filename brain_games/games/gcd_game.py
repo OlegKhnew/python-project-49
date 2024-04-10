@@ -3,6 +3,9 @@
 import random
 
 
+RANGE_START = 1
+RANGE_END = 100
+
 rule = 'Find the greatest common divisor of given numbers.'
 
 
@@ -15,9 +18,9 @@ def is_gcd(x, y):
     return x
 
 
-def gcd_game():
-    x = random.randint(1, 100)
-    y = random.randint(1, 100)
+def get_gcd_game():
+    x = random.randint(RANGE_START, RANGE_END)
+    y = random.randint(RANGE_START, RANGE_END)
     question = 'Question: ' + str(x) + ' ' + str(y)
     result = is_gcd(x, y)
     return question, result

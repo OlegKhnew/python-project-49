@@ -3,13 +3,16 @@
 import prompt
 
 
-def game_logic(rule, function):
+ROUNDS = 3
+
+
+def run_game(rule, get_question_and_result):
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
     print(rule)
     count = 0
-    while count < 3:
-        question, result = function()
+    while count < ROUNDS:
+        question, result = get_question_and_result()
         print('Question: ' + str(question))
         answer = prompt.string('Your answer: ')
         if answer == str(result):
@@ -20,16 +23,15 @@ def game_logic(rule, function):
             answer = f"'{answer}' is wrong answer ;(. "\
                      f"Correct answer was '{result}'."
             print(answer)
-# print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
             break
-    if count == 3:
+    if count == ROUNDS:
         print(f'Congratulations, {name}!')
     else:
         print(f"Let's try again, {name}!")
 
 
 def main():
-    game_logic()
+    run_game()
 
 
 if __name__ == '__main__':

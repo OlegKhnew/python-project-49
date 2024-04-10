@@ -4,12 +4,15 @@ import random
 import operator
 
 
+RANGE_START = 1
+RANGE_END = 50
+
 rule = 'What is the result of the expression?'
 
 
-def calc_game():
-    x = random.randint(1, 50)
-    y = random.randint(1, 50)
+def get_calc_game():
+    x = random.randint(RANGE_START, RANGE_END)
+    y = random.randint(RANGE_START, RANGE_END)
     op = random.choice(['+', '-', '*'])
     question = 'Question: ' + str(x) + ' ' + op + ' ' + str(y)
     if op == '+':

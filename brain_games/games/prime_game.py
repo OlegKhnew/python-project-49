@@ -3,6 +3,9 @@
 import random
 
 
+RANGE_START = 1
+RANGE_END = 200
+
 rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
@@ -13,8 +16,8 @@ def is_prime(x):
     return True
 
 
-def prime_game():
-    number = random.randint(1, 200)
+def get_prime_game():
+    number = random.randint(RANGE_START, RANGE_END)
     if is_prime(number):
         result = 'yes'
     else:
