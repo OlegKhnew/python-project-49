@@ -16,7 +16,7 @@ def is_prime(x):
     return True
 
 
-def get_prime_game():
+def get_round_of_prime_game():
     number = random.randint(RANGE_START, RANGE_END)
     if is_prime(number):
         result = 'yes'

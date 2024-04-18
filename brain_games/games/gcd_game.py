@@ -9,7 +9,7 @@ RANGE_END = 100
 rule = 'Find the greatest common divisor of given numbers.'
 
 
-def is_gcd(x, y):
+def get_gcd(x, y):
     while x != y:
         if x > y:
             x = x - y
@@ -18,9 +18,9 @@ def is_gcd(x, y):
     return x
 
 
-def get_gcd_game():
+def get_round_of_gcd_game():
     x = random.randint(RANGE_START, RANGE_END)
     y = random.randint(RANGE_START, RANGE_END)
     question = 'Question: ' + str(x) + ' ' + str(y)
-    result = is_gcd(x, y)
+    result = get_gcd(x, y)
     return question, result

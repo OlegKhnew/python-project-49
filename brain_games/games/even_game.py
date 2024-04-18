@@ -10,12 +10,10 @@ rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(x):
-    if x % 2 == 0:
-        return True
-    return False
+    return x % 2 == 0
 
 
-def get_even_game():
+def get_round_of_even_game():
     number = random.randint(RANGE_START, RANGE_END)
     question = str(number)
     if is_even(number):

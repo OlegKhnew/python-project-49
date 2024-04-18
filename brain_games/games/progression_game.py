@@ -32,9 +32,10 @@ def create_question_line(progression, x_index):
     return question_line
 
 
-def get_progression_game():
+def get_round_of_progression_game():
     initial_term = random.randint(INITIAL_RANGE_START, INITIAL_RANGE_END)
-    common_difference = random.randint(2, 10)
+    common_difference = random.randint(COMMON_DIFFERENCE_RANGE_START,
+                                       COMMON_DIFFERENCE_RANGE_END)
     progression = get_progression(initial_term, common_difference)
     x_index = random.randint(X_INDEX_RANGE_START, X_INDEX_RANGE_END)
     question = create_question_line(progression, x_index)

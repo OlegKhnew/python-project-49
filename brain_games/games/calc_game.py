@@ -10,7 +10,7 @@ RANGE_END = 50
 rule = 'What is the result of the expression?'
 
 
-def get_calc_game():
+def get_round_of_calc_game():
     x = random.randint(RANGE_START, RANGE_END)
     y = random.randint(RANGE_START, RANGE_END)
     op = random.choice(['+', '-', '*'])
